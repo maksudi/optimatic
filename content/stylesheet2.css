@@ -20,7 +20,9 @@ a { color:#7baf30; text-decoration:underline;}
 /* header */
 .header { background:url(images/header_bg.jpg) repeat-x center top;}
 .header_resize { margin:0 auto; padding:0; width:970px; height:337px;}
-.header .logo { padding:100px 0 0;}
+.header .logo { padding:70px 0 0;text-align:center}
+
+.motto {color:#fff;display:block;font-size: 30px;text-decoration:none;font-weight:bold}
 
 /* menu */
 .menu_nav { padding-left:20px; float:left; width:auto;}
