@@ -5,7 +5,7 @@
     <title>Optimatic systems - <%= @item[:title] %></title>
     <link rel="stylesheet" href="<%= @items['/stylesheet2/'].path %>">
     <link rel="stylesheet" href="<%= @items['/superfish/'].path %>">
-    <link rel="shortcut icon" href="/images/optimatic.ico" />
+    <link rel="shortcut icon" href="<%= @items['/images/optimatic/'].path %>" />
     
     <!--meta http-equiv="refresh" content="5"-->
     
@@ -25,7 +25,7 @@
     <div class="header_resize">
       <%= render 'menu' %>
       
-      <div class="logo"><a href="index.html"><img src="/images/logo.png" height="200px"/><br /></a><div class="motto">No Excuses</div></div>
+      <div class="logo"><a href="index.html"><img src="<%= @items['/images/logo/'].path %>" height="200px"/><br /></a><div class="motto">No Excuses</div></div>
       
     </div>
   </div>

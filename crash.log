@@ -1,34 +1,53 @@
-Crashlog created at 2014-05-24 15:02:13 +1000
+Crashlog created at 2014-05-24 16:18:50 +1000
 
 ===== MESSAGE:
 
-LoadError: cannot load such file -- pry
-Install the 'pry' gem using `gem install pry`.
+LoadError: cannot load such file -- nokogiri
+Install the 'nokogiri' gem using `gem install nokogiri`.
 
 ===== COMPILATION STACK:
 
-  (empty)
+  - [item]   /services/optimisation/ (rep default)
 
 ===== STACK TRACE:
 
   0. /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
   1. /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
-  2. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/commands/shell.rb:15:in `run'
-  3. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/command_runner.rb:14:in `block in call'
-  4. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:74:in `handle_while'
-  5. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  6. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/command_runner.rb:13:in `call'
-  7. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command_dsl.rb:223:in `block in runner'
-  8. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command.rb:298:in `call'
-  9. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command.rb:298:in `run_this'
-  10. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command.rb:251:in `run'
-  11. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command.rb:264:in `run'
-  12. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli.rb:59:in `block in run'
-  13. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:74:in `handle_while'
-  14. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  15. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli.rb:57:in `run'
-  16. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/bin/nanoc:19:in `<top (required)>'
-  17. /usr/local/bin/nanoc:23:in `load'
+  2. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/filters/relativize_paths.rb:48:in `run'
+  3. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/compilation/filter.rb:121:in `setup_and_run'
+  4. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/result_data/item_rep.rb:339:in `filter'
+  5. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/compilation/item_rep_proxy.rb:47:in `filter'
+  6. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/compilation/rule_context.rb:61:in `filter'
+  7. ./Rules:23:in `block in load'
+  8. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/compilation/rule.rb:70:in `instance_eval'
+  9. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/compilation/rule.rb:70:in `apply_to'
+  10. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/compilation/compiler.rb:385:in `compile_rep'
+  11. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/compilation/compiler.rb:341:in `block in compile_reps'
+  12. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/compilation/compiler.rb:334:in `loop'
+  13. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/compilation/compiler.rb:334:in `compile_reps'
+  14. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  15. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  16. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/commands/compile.rb:397:in `block in run'
+  17. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/commands/compile.rb:438:in `run_listeners_while'
+  18. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/commands/compile.rb:396:in `run'
+  19. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  20. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:74:in `handle_while'
+  21. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  22. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/command_runner.rb:13:in `call'
+  23. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command_dsl.rb:223:in `block in runner'
+  24. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command.rb:298:in `call'
+  25. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command.rb:298:in `run_this'
+  26. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command.rb:251:in `run'
+  27. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/commands/nanoc.rb:39:in `block in define'
+  28. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command.rb:298:in `call'
+  29. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command.rb:298:in `run_this'
+  30. /var/lib/gems/1.9.1/gems/cri-2.6.0/lib/cri/command.rb:251:in `run'
+  31. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli.rb:59:in `block in run'
+  32. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:74:in `handle_while'
+  33. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  34. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/lib/nanoc/cli.rb:57:in `run'
+  35. /var/lib/gems/1.9.1/gems/nanoc-3.6.11/bin/nanoc:19:in `<top (required)>'
+  36. /usr/local/bin/nanoc:23:in `load'
 
 ===== VERSION INFORMATION:
 
@@ -42,18 +61,22 @@ Linux maksudpc 3.13.0-24-generic #47-Ubuntu SMP Fri May 2 23:30:00 UTC 2014 x86_
 ===== INSTALLED GEMS:
 
   adsf 1.2.0
+  coderay 1.1.0
   colored 1.2
   cri 2.6.0
   extlib 0.9.16
   gli 2.10.0
   glyph 0.5.2
   haml 4.0.5
+  method_source 0.8.2
   mime-types 2.3
   mini_portile 0.6.0
   nanoc 3.6.11
+  pry 0.9.12.6
   rack 1.5.2
   rake 10.3.2
   rubypants 0.2.0
+  slop 3.5.0
   tilt 2.0.1
 
 ===== ENVIRONMENT:
@@ -85,6 +108,7 @@ LESSOPEN => "| /usr/bin/lesspipe %s"
 LOGNAME => "maksud"
 LS_COLORS => "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:"
 MANDATORY_PATH => "/usr/share/gconf/ubuntu.mandatory.path"
+OLDPWD => "/home/maksud/workspace/optimaticWebsite/optimatic/output"
 PATH => "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 PWD => "/home/maksud/workspace/optimaticWebsite/optimatic"
 QT4_IM_MODULE => "xim"
@@ -105,7 +129,7 @@ UBUNTU_MENUPROXY => "1"
 UPSTART_SESSION => "unix:abstract=/com/ubuntu/upstart-session/1000/2061"
 USER => "maksud"
 VTE_VERSION => "3409"
-WINDOWID => "77603723"
+WINDOWID => "77594635"
 XAUTHORITY => "/home/maksud/.Xauthority"
 XDG_CONFIG_DIRS => "/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg"
 XDG_CURRENT_DESKTOP => "Unity"

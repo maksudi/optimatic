@@ -20,6 +20,7 @@ compile '*' do
     # don’t filter binary items
   else
     filter :erb
+    #filter :relativize_paths, :type => :html
     layout 'default'
   end
 end
