@@ -5,6 +5,7 @@
     <title>Optimatic systems - <%= @item[:title] %></title>
     <link rel="stylesheet" href="<%= @items['/stylesheet2/'].path %>">
     <link rel="stylesheet" href="<%= @items['/superfish/'].path %>">
+    <!--meta http-equiv="refresh" content="5"-->
     
     <!--script src="js/jquery.js"></script>
     <script src="js/hoverIntent.js"></script>
@@ -22,61 +23,29 @@
     <div class="header_resize">
       <%= render 'menu' %>
       
-      <div class="logo"><a href="index.html"><img src="images/logo.png" height="200px"/><br /></a><div class="motto">No Excuses!</div></div>
+      <div class="logo"><a href="index.html"><img src="/images/logo.png" height="200px"/><br /></a><div class="motto">No Excuses</div></div>
       
     </div>
   </div>
-  
-  
   
   
   
   <div id="main">
-      <%= yield %>
-    </div>
-    
-    
-    <div class="fbg">
-    <div class="fbg_resize">
-      <div class="col c1">
-        <h2>About</h2>
-        <img src="images/white.jpg" width="66" height="66" alt="pix" />
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. llorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum. <a href="#">Learn more...</a></p>
-      </div>
-      <div class="col c2">
-        <h2>Lorem Ipsum</h2>
-        <ul class="sb_menu">
-          <li><a href="#">consequat molestie</a></li>
-          <li><a href="#">sem justo</a></li>
-          <li><a href="#">semper</a></li>
-          <li><a href="#">magna sed purus</a></li>
-          <li><a href="#">tincidunt</a></li>
-        </ul>
-      </div>
-      <div class="col c3">
-        <h2>Contact</h2>
-        <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
-        <p><strong>Phone:</strong> +1234567<br />
-          <strong>Address:</strong> 123 TemplateAccess Rd<br />
-          <strong>E-mail:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
-      </div>
-      <div class="clr"></div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="footer_resize">
-      <p class="lf">&copy; Copyright Optimatic Pty Ltd. </p>
-      <ul class="fmenu">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
-      <div class="clr"></div>
-    </div>
+  	<div class="content">
+  		<div class="content_resize">
+  			<div class="mainbar">
+  			
+  				<%= yield %>
+  				
+  				<hr/>
+  				<div class="clr"></div>
+  				
+  			</div>
+  		</div>
+  	</div>
   </div>
     
-    
-      
-</div>
+  <%= render 'footer' %>  
+
   </body>
 </html>

@@ -1,44 +1,44 @@
 
 		
 <ul class="sf-menu" id="example">
-	<li class="current">
-		<a>Home</a>
+	<li>
+		<%= link_to('Home', '/') %>
 	</li>
 	<li><a>Services</a>
     		<ul>
-    			<li><a href="services/optimisation.html">Optimisation</a></li>
- 			<li><a href="services/simulation.html">Simulation</a></li>
-   			<li><a href="services/forecasting.html">Forecasting</a></li>
-    			<li><a href="services/integration-architecture.html">Integration and architecutre</a></li>
-    			<li><a href="services/specialist-skill-injection.html">Specialist skill injection</a></li>        
+    			<li><%= link_to('Optimisation',			'/services/optimisation/') %></li>
+ 			<li><%= link_to('Simulation',			'/services/simulation/') %></li>
+   			<li><%= link_to('Forecasting',			'/services/forecasting/') %></li>
+   			<li><%= link_to('Integration and architecutre',	'/services/integration-architecture/') %></li>
+    			<li><%= link_to('Specialist skill injection',	'/services/specialist-skill-injection/') %></li>
     		</ul>
     	</li>
     	<li><a>Industry solutions</a>
     		<ul>
-    			<li><a href="solutions/marketing-optimisation.html">Marketing optimisation</a></li>
-      			<li><a href="solutions/planning-scheduling.html">Plannnig and scheduling</a></li>
-      			<li><a href="solutions/exporatory-analytics.html">Exploratory analytics</a></li>
+    			<li><%= link_to('Marketing optimisation',	'/solutions/marketing-optimisation/') %></li>
+ 			<li><%= link_to('Plannnig and scheduling',	'/solutions/planning-scheduling/') %></li>
+   			<li><%= link_to('Exploratory analytics',	'/solutions/exploratory-analytics/') %></li>
       		</ul>
-      		</li>
+      	</li>
       	<li><a>Company</a>
       		<ul>
-      			<li><a href="company/about.html">About</a></li>
-      			<li><a href="company/team.html">Management team</a></li>
-      			<li><a href="company/advisors.html">Partners and advisors</a></li>
-      			<li><a href="company/news.html">News</a></li>
-      			<li><a href="company/publications.html">Publications</a></li>
+      			<li><%= link_to('About',			'/company/about/') %></li>
+      			<li><%= link_to('Management team',		'/company/team/') %></li>
+      			<li><%= link_to('Partners and advisors',	'/company/advisors/') %></li>
+      			<li><%= link_to('News',				'/company/news/') %></li>
+      			<li><%= link_to('Publications',			'/company/publications/') %></li>
       		</ul>
       	</li>
       	<li><a>Careers</a>
       		<ul>
-      			<li><a href="careers/roles.html">Roles</a></li>
-      			<li><a href="careers/core-competencies.html">Core competencies</a></li>
-      			<li><a href="careers/tools-products.html">Tools and products</a></li>
+      			<li><%= link_to('Roles',			'/careers/roles/') %></li>
+      			<li><%= link_to('Core competencies',		'/careers/core-competencies/') %></li>
+      			<li><%= link_to('Tools and products',		'/careers/tools-products/') %></li>
       		</ul>
       	</li>
       	<li><a>Contact</a>
       		<ul>
-      			<li><a href="contact/contact-us.html">Contact us</a></li>
+      			<li><%= link_to('Contact us',			'/contact/contact-us/') %></li>
       		</ul>
       	<li>
 </ul>
