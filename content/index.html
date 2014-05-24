@@ -1,32 +1,14 @@
 ---
 title: Home
 ---
-<!--
 
-
-<h1>A Brand New nanoc Optimatic</h1>
-
-<p>You’ve just created a new nanoc site. The page you are looking at right now is the home page for your site. To get started, consider replacing this default homepage with your own customized homepage. Some pointers on how to do so:</p>
-
-<ul>
-  <li><p><strong>Change this page’s content</strong> by editing the “index.html” file in the “content” directory. This is the actual page content, and therefore doesn’t include the header, sidebar or style information (those are part of the layout).</p></li>
-  <li><p><strong>Change the layout</strong>, which is the “default.html” file in the “layouts” directory, and create something unique (and hopefully less bland).</p></li>
-</ul>
-
-<p>If you need any help with customizing your nanoc web site, be sure to check out the documentation (see sidebar), and be sure to subscribe to the discussion group (also see sidebar). Enjoy!</p>
--->
-
-
-  <div class="content">
-    <div class="content_resize">
-      <div class="mainbar">
+  
       
-<%= link_to_unless_current('Home',     '/'         ) %>
       
         <div class="article">
           <h2><span>Neural Nets</span></h2>
           <p>Posted by <a href="#">Owner</a> | Filed under <a href="#">templates</a>, <a href="#">internet</a></p>
-          <img src="images/ml.jpg" width="605" height="146" alt="img" />
+          <img src="<%= @items['/images/ml/'].path %>" width="605" height="146" alt="img" />
           <p>Artificial Neural Networks, more commonly referred to as Neural Networks, are networks of many simple processors that have a small amount of local memory. These processors, otherwise known as "units", are connected through numerous communication channels that carry encoded numeric data. The units operate only on their local data and on the inputs they receive via the connections. Historically, much of the inspiration for Neural Networks came from the desire to produce artificial systems capable of sophisticated, perhaps even intelligent, computations similar to those of the human brain.</p>
           <p>Most Neural Networks have some sort of "training" rule whereby the weights of connections are adjusted on the basis of data. This allows Neural Networks to "learn" from examples and exhibit the capacity for generalisation beyond the training data. Consequently, Neural Networks can be extremely useful for pattern recognition, in that they can be trained to detect complex relationships between inputs even when the statistical distributions of those inputs is unknown.</p>
           <p><a href="#" class="obg">Read more</a> <span>&nbsp;&bull;&nbsp;</span> <a href="#" class="obg">Comments (3)</a> | March 16, 2015</p>
@@ -36,7 +18,7 @@ title: Home
         <div class="article">
           <h2>Genetic Algorithms</h2>
           <p>Posted by <a href="#">Owner</a> | Filed under <a href="#">templates</a>, <a href="#">internet</a></p>
-          <img src="images/dna1.jpg" width="605" height="146" alt="img" />
+          <img src="<%= @items['/images/dna1/'].path %>" width="605" height="146" alt="img" />
           <p>The entire research area of Genetic Algorithms, as well as that of Evolutionary Computing, was inspired by Darwin's theory of natural selection and survival of the fittest. Genetic Algorithms are problem-solving programs that try to mimic the way large populations solve problems over a long period of time, through processes such as reproduction, mutation, and natural selection. To emulate the natural phenomenon of evolution, a Genetic Algorithm program creates a population of candidate solutions to a particular problem, and through a process of random selection and variation, each generation of the program improves upon the quality of the solution.</p>
           <p>Consequently, Genetic Algorithms promote the evolution of solutions by using genetically based processes. Unlike natural evolution, the program is usually able to generate and evaluate thousands of generations in seconds.</p>
           <p><a href="#" class="obg">Read more</a> <span>&nbsp;&bull;&nbsp;</span> <a href="#" class="obg">Comments (7)</a> | March 15, 2015</p>
@@ -44,8 +26,7 @@ title: Home
       </div>
       
       
-      <!--%= render 'sidebar' %-->
+      
    
-      <div class="clr"></div>
-    </div>
-  </div>
+      
+

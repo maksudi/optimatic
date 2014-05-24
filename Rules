@@ -20,6 +20,7 @@ compile '*' do
     # don’t filter binary items
   else
     filter :erb
+    #filter :relativize_paths, :type => :html
     layout 'default'
   end
 end
@@ -36,6 +37,7 @@ route '*' do
     item.identifier + 'index.html'
   end
 end
+
 
 layout '*', :erb
 #layout '*', :haml
