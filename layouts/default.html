@@ -5,6 +5,8 @@
     <title>Optimatic systems - <%= @item[:title] %></title>
     <link rel="stylesheet" href="<%= @items['/stylesheet2/'].path %>">
     <link rel="stylesheet" href="<%= @items['/superfish/'].path %>">
+    <link rel="shortcut icon" href="/images/optimatic.ico" />
+    
     <!--meta http-equiv="refresh" content="5"-->
     
     <!--script src="js/jquery.js"></script>
@@ -37,7 +39,8 @@
   			
   				<%= yield %>
   				
-  				<hr/>
+  				<!--%= render 'sidebar' %-->
+  				
   				<div class="clr"></div>
   				
   			</div>
