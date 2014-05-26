@@ -6,12 +6,12 @@ Released for free under a Creative Commons Attribution 3.0 License
 body { margin:0; padding:0; width:100%; color:#5f5f5f; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}
 html, .main { padding:0; margin:0; background:#dedede;}
 .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
-h1 { margin:0; padding:0; color:#fff; font:normal 40px/1.2em Arial, Helvetica, sans-serif; text-transform:uppercase; text-align:center;}
+/*h1 { margin:0; padding:0; color:#fff; font:normal 40px/1.2em Arial, Helvetica, sans-serif; text-transform:uppercase; text-align:center;}*/
 h1 a, h1 a:hover { color:#fff; text-decoration:none;}
 h1 span { color:#007236;}
 h1 small { font:normal 13px/1.2em Arial, Helvetica, sans-serif;}
 h2 { font:normal 24px Arial, Helvetica, sans-serif; color:#4b4b4b; padding:8px 0; margin:8px 0;}
-p { margin:8px 0; padding:0 0 8px 0; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}
+/*p { margin:8px 0; padding:0 0 8px 0; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}*/
 a { color:#7baf30; text-decoration:underline;}
 
 .header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar { margin:0; padding:0;}
@@ -39,8 +39,9 @@ a { color:#7baf30; text-decoration:underline;}
 #formsearch input.button_search { margin:6px 0 0 0; padding:0; border:none; float:right;}
 
 /* content */
-.content_resize { padding-right:0; padding-top:16px; width:930px; background-color:#fff;}
-.content .mainbar { float:left; width:630px;}
+.content {font-size:15px; text-align: justify}
+.content_resize { padding-right:0; padding-top:16px; width:930px; background-color:#fff}
+.content .mainbar { float:left; width:630px}
 .content .mainbar img { margin-bottom:24px; padding:4px; border:1px solid #b7b7b7; background-color:#fff;}
 .content .mainbar img.fl { float:left; margin-right:12px;}
 .content .mainbar .article, .content .sidebar .gadget { margin:0; padding:0 0 16px 0;}
@@ -53,6 +54,11 @@ ul.sb_menu li a, ul.ex_menu li a { color:#5f5f5f; text-decoration:none; margin-l
 ul.sb_menu li a:hover, ul.ex_menu li a:hover { color:#7baf30; font-weight:bold; background:url(images/li_a.gif) no-repeat left center;}
 ul.sb_menu li a:hover { text-decoration:underline;}
 ul.ex_menu li a:hover { text-decoration:none;}
+
+.publications .paperTitle {font-style:italic;font-weight:bold}
+.publications li {padding-left:10px;margin-left:10px}
+
+.articlePhoto {margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px; float:left;height:150px}
 
 
 .memberPhoto {float:left; height: 150px; margin-right: 10px}
