@@ -3,7 +3,8 @@ Design by http://www.bluewebtemplates.com
 Released for free under a Creative Commons Attribution 3.0 License
 */
 @charset "utf-8";
-body { margin:0; padding:0; width:100%; color:#5f5f5f; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}
+
+body { margin:0; padding:0; width:100%; color:#5f5f5f; font:normal 12px/1.8em FiraSans,"Helvetica Neue",Helvetica,Arial,sans-serif;}
 html, .main { padding:0; margin:0; background:#dedede;}
 .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 /*h1 { margin:0; padding:0; color:#fff; font:normal 40px/1.2em Arial, Helvetica, sans-serif; text-transform:uppercase; text-align:center;}*/
