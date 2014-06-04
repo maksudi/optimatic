@@ -42,11 +42,11 @@ a { color:#7baf30; text-decoration:underline;}
 /* content */
 .content {font-size:15px; text-align: justify}
 .content_resize { padding-right:0; padding-top:16px; width:930px; background-color:#fff}
-.content .mainbar { float:left; width:630px}
+.content .mainbar { float:left; width:830px}
 .content .mainbar img { margin-bottom:24px; padding:4px; border:1px solid #b7b7b7; background-color:#fff;}
 .content .mainbar img.fl { float:left; margin-right:12px;}
 .content .mainbar .article, .content .sidebar .gadget { margin:0; padding:0 0 16px 0;}
-.content .sidebar { float:right; width:276px;}
+.content .sidebar { float:right; width:76px;}
 ul.sb_menu, ul.ex_menu { margin:0; padding:0; list-style:none; color:#959595;}
 ul.sb_menu li, ul.ex_menu li { margin:0; background:url(images/li.gif) no-repeat 0 12px;}
 ul.sb_menu li { padding:4px 0; border-bottom:1px solid #e3e3e3; width:220px;}
