@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Optimatic Solutions - <%= @item[:title] %></title>
+    <link rel="stylesheet" href="<%= @items['/stylesheet2/'].path %>">
+    <link rel="stylesheet" href="<%= @items['/superfish/'].path %>">
+    <link rel="shortcut icon" href="<%= @items['/images/optimatic/'].path %>" />
+    
+      <meta name="keywords" content="optimisation, forecasting, simulation, constraint programming, heuristic search, metaheuristics, big data, integration"/_optimatic/>
+    
+    <!--add analytics code-->
+  </head>
+  <body>
+  
+  
+    <div class="header">
+    <div class="header_resize">
+      <%= render 'menu' %>
+      
+      <div class="logo"><a href="index.html"><img src="<%= @items['/images/logo/'].path %>" height="200px"/_optimatic/><br /></a><div class="motto">Quality, Transparency, Results</div></div>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div id="main">
+  	<div class="content">
+  		<div class="content_resize">
+  			<div class="mainbar">
+  			
+  				<h1><%= @item[:title] %></h1>
+  				<%= yield %>
+  				
+  				<!--%= render 'sidebar' %-->
+  				
+  				<div class="clr"></div>
+  				
+  			</div>
+  		</div>
+  	</div>
+  </div>
+    
+  <%= render 'footer' %>  
+
+  </body>
+</html>

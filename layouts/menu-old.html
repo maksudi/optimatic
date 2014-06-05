@@ -1,11 +1,11 @@
-<div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav navbar-right">
-        <li>
+
+		
+<ul class="sf-menu" id="example">
+	<li>
 		<%= link_to('Home', '/') %>
 	</li>
-	<li class="dropdown">
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
-    		<ul class="dropdown-menu">
+	<li><a>Services</a>
+    		<ul>
     		<li><%= link_to('Optimisation',			'/services/optimisation/') %></li>
  			<li><%= link_to('Simulation',			'/services/simulation/') %></li>
    			<li><%= link_to('Forecasting',			'/services/forecasting/') %></li>
@@ -13,19 +13,15 @@
     		<li><%= link_to('Tool specialists',	'/services/specialist-skill-injection/') %></li>
     		</ul>
     	</li>
-
-                    
-    	<li class="dropdown">
-    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Industry solutions <b class="caret"></b></a>
-    		<ul class="dropdown-menu">
+    	<li><a>Industry solutions</a>
+    		<ul>
     		<li><%= link_to('Consumer products and services',	'/solutions/marketing-optimisation/') %></li>
  			<li><%= link_to('Capital-intensive plant and machinery',	'/solutions/planning-scheduling/') %></li>
    			<li><%= link_to('Sensor and log data',	'/solutions/exploratory-analytics/') %></li>
       		</ul>
       	</li>
-      	<li class="dropdown">
-      	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Company<b class="caret"></b></a>
-      		<ul class="dropdown-menu">
+      	<li><a>Company</a>
+      		<ul>
   			<li><%= link_to('About',			'/company/about/') %></li>
   			<li><%= link_to('Management team',		'/company/team/') %></li>
   			<li><%= link_to('Partners and advisors',	'/company/advisors/') %></li>
@@ -33,15 +29,17 @@
   			<li><%= link_to('Publications',			'/company/publications/') %></li>
       		</ul>
       	</li>
-      	<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Careers <b class="caret"></b></a>
-      		<ul class="dropdown-menu">
+      	<li><a>Careers</a>
+      		<ul>
   			<li><%= link_to('Employment philosophy',		'/careers/philosophy/') %></li>
   			<li><%= link_to('Core competencies',		'/careers/core-competencies/') %></li>
   			<li><%= link_to('Roles',			'/careers/roles/') %></li>
   			<li><%= link_to('Tools and products',		'/careers/tools-products/') %></li>
       		</ul>
       	</li>
-      	<li><%= link_to('Contact us',			'/contact/contact-us/') %></li>
-    </ul>
-</div>
-
+      	<li><a>Contact</a>
+      		<ul>
+      			<li><%= link_to('Contact us',			'/contact/contact-us/') %></li>
+      		</ul>
+      	<li>
+</ul>
