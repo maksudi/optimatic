@@ -9,7 +9,6 @@
 
     <title>Optimatic Solutions - <%= @item[:title] %></title>
 
-    <!-- Add custom CSS here -->
     <link rel="stylesheet" href="<%= @items['/bootstrap-min/'].path %>">
     <link rel="stylesheet" href="<%= @items['/modern-business/'].path %>">
     <link rel="stylesheet" href="<%= @items['/font-awesome-min/'].path %>">
@@ -25,65 +24,30 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
                 <a class="navbar-brand" href="<%= @items['/'].path %>">Optimatic</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+<%= render 'menu' %>
             
-            
-            <%= render 'menu' %>
-            
-            
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
-    <div id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            
-            <div class="item">
-                <div class="fill" style="background-image:url('<%= @items['/images/sampleImage/'].path %>');"></div>
-                <div class="carousel-caption">
-                    <h1>Quality, Transparency, Results</h1>
-                </div>
-            </div>
-            
-            
-            <div class="item">
-                <div class="fill" style="background-image:url('<%= @items['/images/sampleImage/'].path %>');"></div>
-                <div class="carousel-caption">
-                    <h1>Big Data experts</h1>
-                </div>
-            </div>
-                        
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </div>
+<%= if(@item.path == '/') then
+	render 'carousel'
+end%>
 
 
     <div class="section">
         <div class="container">
-        	<div class="row well">
-                	<div class="col-lg-12">
+        	<div class="row">
+                	<div class="col-lg-10">
                 		<h1><%= @item[:title] %></h1>
                 		<%= yield %>
+                	</div>
+                	<div class="col-lg-2">
+                		menu
                 	</div>
                 </div>
         </div>
