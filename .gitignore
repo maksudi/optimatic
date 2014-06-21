@@ -1,5 +1,6 @@
 .DS_Store
 crash.log
+s3_website.yml
 tmp/**
 tmp/**/*
 output/**
