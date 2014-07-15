@@ -1,101 +1,171 @@
-* {
-  margin: 0;
-  padding: 0;
+/* 
+Custom CSS for...
+'Modern Business' HTML Theme by Start Bootstrap
 
-  font-family: Georgia, Palatino, serif;
+All Start Bootstrap themes are licensed under Apache 2.0. 
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* Global Styles */
+
+html, body {
+  height: 100%;
 }
 
 body {
-  background: #fff;
+  padding-top: 50px;
+  color: #6C7279;
+ /* body padding for fixed top nav */
 }
 
-a {
+.img-home-portfolio,
+.img-customer,
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.tab-pane {
+  margin-top: 15px;
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+  padding: 50px 0;
+}
+
+.section-colored {
+  background-color: #e1e1e1;
+ /* change this to change the background color of a colored section */
+}
+
+.sidebar {
+  margin-top: 40px;
+}
+
+.sidebar ul {
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+}
+
+/* Half Page Height Carousel Customization */
+.carousel {
+  height: 50%;
+}
+
+.item,
+.active,
+.carousel-inner {
+  height: 100%;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Social Icons Styles */
+.list-social-icons {
+  margin-bottom: 45px;
+}
+
+.tooltip-social a {
   text-decoration: none;
+  color: inherit;
 }
 
-a:link,
-a:visited {
-  color: #f30;
+.facebook-link a:hover {
+  color: #3b5998;
 }
 
-a:hover {
-  color: #f90;
+.linkedin-link a:hover {
+  color: #007fb1;
 }
 
-#main {
-  position: absolute;
-
-  top: 40px;
-  left: 280px;
-
-  width: 500px;
+.twitter-link a:hover {
+  color: #39a9e0;
 }
 
-#main h1 {
-  font-size: 40px;
-  font-weight: normal;
-
-  line-height: 40px;
-
-  letter-spacing: -1px;
+.google-plus-link a:hover {
+  color: #d14836;
 }
 
-#main p {
-  margin: 20px 0;
-
-  font-size: 15px;
-
-  line-height: 20px;
+/* Service Page Styles */
+.service-icon {
+  font-size: 50px;
 }
 
-#main ul, #main ol {
-  margin: 20px;
+/* 404 Page Styles */
+.error-404 {
+  font-size: 8em;
 }
 
-#main li {
-  font-size: 15px;
-
-  line-height: 20px;
+/* Pricing Page Styles */
+.price {
+  font-size: 4em;
 }
 
-#main ul li {
-  list-style-type: square;
+.price-cents {
+  vertical-align: super;
+  font-size: 50%;
 }
 
-#sidebar {
-  position: absolute;
-
-  top: 40px;
-  left: 20px;
-  width: 200px;
-
-  padding: 20px 20px 0 0;
-
-  border-right: 1px solid #ccc;
-
-  text-align: right;
+.price-month {
+  font-size: 35%;
+  font-style: italic;
 }
 
-#sidebar h2 {
-  text-transform: uppercase;
-
-  font-size: 13px;
-
-  color: #333;
-
-  letter-spacing: 1px;
-
-  line-height: 20px;
+/* Footer Styles */
+footer {
+  margin: 50px 0;
 }
 
-#sidebar ul {
-  list-style-type: none;
+/* Responsive Styles */
+@media (max-width: 767px) {
 
-  margin: 20px 0;
+  .carousel {
+    height: 70%;
+ /* increases the carousel height so it looks good on phones */
+  }
 }
 
-#sidebar li {
-  font-size: 14px;
 
-  line-height: 20px;
+.memberPhoto {float:right; height: 150px; margin-right: 10px}
+
+.articlePhoto {margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px; float:right;height:150px}
+
+h2 {
+    color: #555;
+    font-weight: 300;
+    font-size: 28px;
 }
+
+h4 {
+color: #3B88B6;
+}
+
+.feature {
+    margin-top: 55px;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #DDD;
+    position: relative;
+    margin: 70px 0px 60px;
+}
+
+.divider:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-image: -moz-linear-gradient(left center , rgba(255, 255, 255, 0.75) 0%, rgba(250, 250, 250, 0) 50%, rgba(255, 255, 255, 0.75) 100%);
+}
+
