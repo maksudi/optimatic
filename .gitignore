@@ -3,6 +3,6 @@ crash.log
 s3_website.yml
 tmp/**
 tmp/**/*
-public/output/**
+_site/**
 *.log
 *~
