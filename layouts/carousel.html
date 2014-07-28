@@ -1,35 +1,34 @@
-    <div id="myCarousel" class="carousel slide">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
+    <!-- Main Slider -->
+        <section id="main-slider" class="main-slide-wraper carousel slide" data-ride="carousel">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item ">
+                    <div id="slide-item-1">
+                        <div class="fill" style="background-image:url('<%= @items['/images/adaptic-slide/'].path %>'); height: 600px;"></div>
+                        <div class="col-lg-12" style="overflow: hidden; position: absolute; top: 0;">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>Put Your Data to Work</h1>
+                                    <h3><p style="color:white">Make better business decisions with actionable insights from data science.</p></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.active /.item -->
 
-        <div class="carousel-inner">
+               <!--  <div class="item ">
+                    <div id="slide-item-2">
+                        <div class="fill" style="background-image:url(''); height: 400px;"></div>
+                        <div class="carousel-caption">
+                            <h1>Quality, Transparency, Results</h1>
+                        </div> 
+                    </div>
+                </div><!--/.active /.item --> 
+            </div><!-- /.carousel-inner -->
             
-            <div class="item active">
-                <div class="fill" style="background-image:url('<%= @items['/images/sampleImage/'].path %>');"></div>
-                <div class="carousel-caption">
-                    <h1>Quality, Transparency, Results</h1>
-                </div>
-            </div>
-            
-            <div class="item">
-                <div class="fill" style="background-image:url('<%= @items['/images/sampleImage/'].path %>');"></div>
-                <div class="carousel-caption">
-                    <h1>Quality, Transparency, Results</h1>
-                </div>
-            </div>
-            
-                        
-        </div>
-
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </div>
-    
-    
-    
+            <!-- slider nav -->
+            <!-- <a class="slide-nav left" href="#main-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+            <a class="slide-nav right" href="#main-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+ -->
+        </section><!-- /#main-slider -->
+        <!-- Main Slider End -->
