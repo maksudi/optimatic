@@ -94,7 +94,9 @@ body a:hover {
 	text-decoration: underline;
 }
 
-.copyrights a:hover {
+
+
+.copyrights a:hover, #blog-sidebar .widget-content a:hover {
 	text-decoration: none;
 }
 
