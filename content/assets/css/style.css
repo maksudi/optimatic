@@ -86,6 +86,18 @@ Tags: html, themplate, ccr, biz
 
 /* EDITS */
 
+body a {
+	color: #2a6496;
+}
+
+body a:hover {
+	text-decoration: underline;
+}
+
+.copyrights a:hover {
+	text-decoration: none;
+}
+
 #blog-sidebar.stuck {
 	position: fixed;
 	top: 30px;
@@ -150,7 +162,7 @@ background-size: cover; }
 
 .articlePhoto { width: 100%; margin: 0 0 20px 0; }
 
-#blog-header { background-position: 0 35% !important; background-size: inherit; }
+/*#blog-header { background-position: 0 35% !important; background-size: inherit; }*/
 
 #blog-contents ul {font-size: 0.9375em;}
 
@@ -180,8 +192,14 @@ a.navbar-brand:hover h1 {color: #3498db;}
 
 #footer-section a:hover { color: #3cc0bf; }
 
+.navbar-default .navbar-nav>.open>a { border-top: 2px solid #e1e1e1 !important; }
+
 @media screen and (max-width: 767px) {
 	.team-member, .team-desc { max-width: none; }
+}
+
+@media screen and (max-width: 960px) {
+	#blog-header { background-image: url('../../images/adaptic-banner-mobile.jpg') !important; }
 }
 
 /* 2 - Global Styles
@@ -1124,17 +1142,12 @@ blockquote em{
 }
 
 #main-menu .navbar-nav a{
-	/*border-top: 2px solid #ffffff;*/
+	border-top: 2px solid #ffffff;
 	border-bottom: 4px solid transparent;
 	font-size: 15px;
 	font-weight: 400;
 	position: relative;
 	text-transform: uppercase;
-	color: #3cc0bf;
-}
-
-#main-menu .navbar-nav li  a:hover {
-	text-decoration: underline;
 }
 
 #main-menu .navbar-nav li  a:before{
@@ -1152,10 +1165,27 @@ blockquote em{
 	transition: all .25s  ease-in;
 }
 
-#main-menu .navbar-nav li:hover  a:before{
+#main-menu .navbar-nav li:hover a:before{
 	border-top: 4px solid #3498db;
+	left: 0%;
+	width:100%;	
 }
 
+#main-menu .navbar-nav li.dropdown .dropdown-menu a:before{
+	border-top: 4px solid #fff !important;
+	left: 0%;
+	width:100%;	
+}
+
+#main-menu .navbar-nav li.dropdown .dropdown-menu a:hover{
+	color: #3498db;
+}
+
+#main-menu .navbar-nav li.dropdown:hover .dropdown-menu a:before{
+	border-top: 4px solid #fff !important;
+	left: 0%;
+	width:100%;	
+}
 
 .navbar-small.navbar{
 	min-height:60px!important;

@@ -8,9 +8,9 @@
   <li class="dropdown <% if(my_split[1] == 'services') then %>active<%end%>">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
         <ul class="dropdown-menu">
-        <li><%= link_to('Optimisation',     '/services/optimisation/') %></li>
-      <li><%= link_to('Simulation',     '/services/simulation/') %></li>
         <li><%= link_to('Predictive modelling',     '/services/predictive-modelling/') %></li>
+        <li><%= link_to('Optimisation',     '/services/optimisation/') %></li>
+        <li><%= link_to('Simulation',     '/services/simulation/') %></li>
         <li><%= link_to('Integration and architecture', '/services/integration-architecture/') %></li>
         <li><%= link_to('Tool specialists', '/services/specialist-skill-injection/') %></li>
         </ul>
@@ -31,12 +31,11 @@
           <ul class="dropdown-menu">
         <li><%= link_to('About',      '/company/about/') %></li>
         <li><%= link_to('Management team',    '/company/team/') %></li>
-        <li><%= link_to('Partners and advisors',  '/company/advisors/') %></li>
         <li><%= link_to('News',       '/company/news/') %></li>
         <li><%= link_to('Publications',     '/company/publications/') %></li>
           </ul>
         </li>
-        <li class="<% if(my_split[1] == 'careers') then %>active<%end%>"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Careers <b class="caret"></b></a>
+        <li class="dropdown <% if(my_split[1] == 'careers') then %>active<%end%>"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Careers <b class="caret"></b></a>
           <ul class="dropdown-menu">
         <li><%= link_to('Employment philosophy',    '/careers/philosophy/') %></li>
         <li><%= link_to('Core competencies',    '/careers/core-competencies/') %></li>
