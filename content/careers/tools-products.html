@@ -2,95 +2,43 @@
 title: Tools and products
 ---
 
-<p>Adaptic is not aligned to any particular vendor, however, these are the tools and products we commonly recommend and utilise at our clients.
-</p>
+<p>Adaptic is not aligned to any particular vendor, however, these are the tools and products we commonly recommend and utilise at our clients.</p>
 
-<h3>Open Source</h3>
-<p>  Apache Hadoop
-</p>
-<p>  Apache Spark
-</p>
-<p>  R
-</p>
-<p>  Octave
-</p>
-<p>  RapidMiner
-</p>
-<p>  Storm
-</p>
-<p>  Scoobi
-</p>
+<h3>Cluster computing</h3>
 
-<h3>Curated</h3>
-<p>Cloudera
-</p>
-<p>Hortonworks
-</p>
-<p>Hadapt
-</p>
-<p>Databricks
-</p>
+<p><a href="https://spark.apache.org/">Apache Spark</a> is growing in profile and for good reason. With distributed computation primitives which are more powerful and flexible than simple map-reduce, and advanced dataset management which makes better use of the cluster's RAM, Spark is a fantastic match for iterative machine learning algorithms, as well as the batch and stream-oriented workloads required by the Lambda Architecture. The Spark API leverages your python knowledge, but is also accessible from Scala or plain old Java (if you must). Spark leverages many distributed SQL and NoSQL formats and data stores in the cluster and communes happily on top of the Hadoop YARN and HDFS infrastructures, including in AWS or other cloud.</p>
 
-<h3>Proprietary</h3>
-<p> Oracle Exalytics
-</p>
-<p> SAS Visual Analytics
-</p>
-<p> Tableau
-</p>
-<p> QlikView
-</p>
-<p> FocalPoint
-</p>
-<p> MS SQLServer (SSIS/SSAS/SSRS) 
-</p>
-<p> IBM Infosphere
-</p>
-<p> Informatica
-</p>
+<p>In most enterprise data hub architectures there is a place for a high-performance relational database or database appliance in the serving layer. On AWS, this requirement can be met very effectively by <a href="https://aws.amazon.com/redshift/">Redshift</a>, but we are equally comfortable working with <a href="http://www.ibm.com/ibm/puresystems/us/en/pd_analytics.html">Netezza<a>, <a href="http://www.pivotal.io/big-data/pivotal-greenplum-database">Greenplum</a> or <a href="http://www.oracle.com/us/solutions/ent-performance-bi/business-intelligence/exalytics-bi-machine/overview/index.html">Exalytics</a>. 
 
-<h3>Cloud providers</h3>
-<p>Amazon AWS
-</p>
-<p>Google Cloud Platform
-</p>
-<p>Microsoft Azure
-</p>
+<h3>Analytics and machine learning</h3>
 
-<h3>Favourite languages</h3>
-<p>  Python
-</p>
-<p>  Java
-</p>
-<p>  Scala
-</p>
-<p>  Clojure
-</p>
-<p>  Bash
-</p>
-<p>  .Net
-</p>
+<p><a href="https://spark.apache.org/mllib/">MLlib</a> (and <a href="https://mahout.apache.org/users/sparkbindings/home.html">soon Mahout</a>) are excellent platforms for scaling machine learning algorithms. These make data- and processing-intensive algorithms feasible to apply to full customer data sets with hundreds or thousands of features.</p>
 
-<h3>Algorithms and techniques</h3>
-<p>Linear/logistic regression
-</p>
-<p>Support vector machine
-</p>
-<p>Neural network
-</p>
-<p>Meta-heuristics (genetic algorithms)
-</p>
-<p>Discrete event simulators
-</p>
-<p>Uplift (response) modelling
-</p>
-<p>Collaborative filtering
-</p>
+<p>However, for smaller problems and prototyping bigger ones we utilise other tools including the awesome open source <a href="http://community.rapidminer.com/">RapidMiner</a>, <a href="http://www.r-project.org/">R</a> and <a href="http://www.gnu.org/software/octave/">Octave</a> applications and the python <a href="http://scikit-learn.org/stable/">scikit-learn</a> ecosystem.</p>
 
-<h3>Data model architecture</h3>
-<p>Data Vault
-</p>
-<p>Entity analytic record
-</p>
-<p>Star schema (Kimball)
-</p>
+<p>These applications and platforms offer the building blocks for our key machine learning techniques, which include:</p>
+<ul>
+    <li>Linear/logistic regression
+    <li>Support vector machine
+    <li>Neural network
+    <li>Meta-heuristics (genetic algorithms)
+    <li>Discrete event simulators
+    <li>Uplift (response) modelling
+    <li>Collaborative filtering
+</ul>
+
+<h3>Presentation and visualisation</h3>
+
+<p>We are absolute believers in the importance of exploring and communicating the insight available from data and models and modern visualisation tools (which transcend report-writers) are the main method to empower business domain experts, analysts and data scientists to influence decisions. <a href="http://www.tableausoftware.com/">Tableau</a> and <a href="http://www.qlik.com/">QlikView</a> are two examples we are happy to use.</p>
+
+<p>For discovery analytics, an appliance which we can use to quickly ingest, categorise, navigate and present large amounts of structured and unstructured data is <a href="http://www.sas.com/en_us/software/business-intelligence/visual-analytics.html">SAS Visual Analytics</a> which we have found worth consideration and useful in certain circumstances.</p>  
+
+<p>From the mining industry, we have experience designing and implementing dashboards and control systems in <a href="http://www.ventyx.com/en/solutions/business-operations/business-products/focalpoint">FocalPoint Suite</a>.</p>
+
+<h3>Methods and modelling</h3>  
+
+<p>We are proponents of agile methods and favour modelling and design standards which facilitate early delivery of working software and resilience under change and iteration.</p>
+ 
+<p>Specifically, for tightly governed data assets we recommend <a href="http://danlinstedt.com/">Data Vault</a> modelling (a variant of anchor modelling) and intermediate representation for analytics called Entity Analytic Record (popularised by <a href="http://www.ambiata.com">Ambiata</a>).</p>
+
+<p>For serving and presentation, maximising clear semantics and reuse in all kinds of reporting tools, we have not found a replacement for the conventional <a href="https://en.wikipedia.org/wiki/Star_schema">Star schema (Kimball)</a>.</p>
