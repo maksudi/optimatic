@@ -6,7 +6,9 @@ title: Tools and products
 
 <h3>Cluster computing</h3>
 
-<p><a href="https://spark.apache.org/">Apache Spark</a> is growing in profile and for good reason. With distributed computation primitives which are more powerful and flexible than simple map-reduce, and advanced dataset management which makes better use of the cluster's RAM, Spark is a fantastic match for iterative machine learning algorithms, as well as the batch and stream-oriented workloads required by the Lambda Architecture. The Spark API leverages your python knowledge, but is also accessible from Scala or plain old Java (if you must). Spark leverages many distributed SQL and NoSQL formats and data stores in the cluster and communes happily on top of the Hadoop YARN and HDFS infrastructures, including in AWS or other cloud.</p>
+<p>Map-reduce on Apache Hadoop is the industry-standard for scaling distributed computations, but, it is a break-through which is still evolving.</p> 
+    
+<p><a href="https://spark.apache.org/">Apache Spark</a> is growing in profile and for good reason. With distributed computation primitives which are more powerful and flexible than simple map-reduce, and advanced dataset management which makes better use of the cluster's RAM, Spark is a fantastic match for iterative machine learning algorithms, as well as the batch and stream-oriented workloads required when we use the <a href="http://www.manning.com/marz/">Lambda Architecture</a>. The Spark API leverages your Python knowledge, but is also accessible from Scala or Java. Spark leverages many distributed SQL and NoSQL formats and data stores in the cluster and communes happily on top of the Hadoop YARN and HDFS infrastructures, including in AWS or other cloud.</p>
 
 <p>In most enterprise data hub architectures there is a place for a high-performance relational database or database appliance in the serving layer. On AWS, this requirement can be met very effectively by <a href="https://aws.amazon.com/redshift/">Redshift</a>, but we are equally comfortable working with <a href="http://www.ibm.com/ibm/puresystems/us/en/pd_analytics.html">Netezza<a>, <a href="http://www.pivotal.io/big-data/pivotal-greenplum-database">Greenplum</a> or <a href="http://www.oracle.com/us/solutions/ent-performance-bi/business-intelligence/exalytics-bi-machine/overview/index.html">Exalytics</a>. 
 
@@ -14,17 +16,17 @@ title: Tools and products
 
 <p><a href="https://spark.apache.org/mllib/">MLlib</a> (and <a href="https://mahout.apache.org/users/sparkbindings/home.html">soon Mahout</a>) are excellent platforms for scaling machine learning algorithms. These make data- and processing-intensive algorithms feasible to apply to full customer data sets with hundreds or thousands of features.</p>
 
-<p>However, for smaller problems and prototyping bigger ones we utilise other tools including the awesome open source <a href="http://community.rapidminer.com/">RapidMiner</a>, <a href="http://www.r-project.org/">R</a> and <a href="http://www.gnu.org/software/octave/">Octave</a> applications and the python <a href="http://scikit-learn.org/stable/">scikit-learn</a> ecosystem.</p>
+<p>However, for smaller problems and prototyping bigger ones we utilise other tools including the awesome open source <a href="http://www.r-project.org/">R</a>, <a href="http://www.gnu.org/software/octave/">Octave</a> and <a href="http://community.rapidminer.com/">RapidMiner</a> applications as well as the Python <a href="http://scikit-learn.org/stable/">scikit-learn</a> ecosystem.</p>
 
 <p>These applications and platforms offer the building blocks for our key machine learning techniques, which include:</p>
 <ul>
-    <li>Linear/logistic regression
-    <li>Support vector machine
-    <li>Neural network
-    <li>Meta-heuristics (genetic algorithms)
-    <li>Discrete event simulators
-    <li>Uplift (response) modelling
-    <li>Collaborative filtering
+    <li>Linear/logistic regression</li>
+    <li>Support vector machines</li>
+    <li>Neural networks</li>
+    <li>Meta-heuristics (including genetic algorithms)</li>
+    <li>Discrete event simulators</li>
+    <li>Collaborative filtering</li>
+    <li>Ensemble methods</li>
 </ul>
 
 <h3>Presentation and visualisation</h3>
